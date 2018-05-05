@@ -1,0 +1,44 @@
+{
+  "name": "nodexmlreader",
+  "version": "1.0.0",
+  "description": "A microservice for xml2json processing",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "lint": "./node_modules/.bin/eslint ./server/**/*.js",
+    "test": "mocha --reporter spec test/",
+    "coverage": "istanbul cover _mocha -- --reporter progress ./test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danizavtz/xmlReader.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "jwt.io"
+  ],
+  "author": "danizavtz",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/danizavtz/xmlReader/issues"
+  },
+  "homepage": "https://github.com/danizavtz/xmlReader#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-validator": "^3.2.1",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^4.2.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.5",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.1"
+  }
+}

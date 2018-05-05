@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var app = require('../app');
+app.listen(3011);
+console.log('Microsservice login listening at http://localhost:%s', 3011);
