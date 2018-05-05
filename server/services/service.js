@@ -3,6 +3,7 @@
     const fs = require('fs');
     const xml2js = require('xml2js');
     const filename = __dirname + "/../../xml/saida.xml"
+    
     exports.logData = (req, res) => {
         let parser = new xml2js.Parser();
         parser.parseString(req.infoxml, function(err, result) {
@@ -25,7 +26,6 @@
     exports.lookUpData = (req, res, next) => {
         let buf = fs.readFileSync(filename, "utf8");
         req.infoxml = buf;
-        console.log(typeof buf);
         next();
     };
 
